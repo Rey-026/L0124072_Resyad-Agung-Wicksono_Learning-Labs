@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+
+
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gabarito", sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color:white ;
+}
+
+header nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(1, 2, 22);
+  border-bottom: 2px solid white;
+  
+}
+
+header nav a{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  background-color: rgb(1, 2, 22);
+  transition: 0.5s ease-in-out;
+  transition-delay: 150ms;
+  border : 15px solid rgb(1, 2, 22);
+
+}
+
+main section {
+  height: 100vh;
+}
+
+main #class-page {
+  display: flex;
+  flex-direction: row;
+}
+
+main #class-page #class-page-left,
+main #class-page #class-page-right {
+  width: 50%;
+  height: 100%;
+}
+  
+  main #class-page #class-page-left {
+    background-color: rgb(20, 20, 24);
+    color: white;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  main #class-page #class-page-left #class-page-title {
+    padding: 32px;
+  }
+  
+  main #class-page #class-page-left #class-page-title h1 {
+    font-size: 112px;
+  }
+  
+  main #class-page #class-page-left #class-page-title h2 {
+    font-size: 32px;
+  }
+  
+  main #class-page #class-page-right img {
+    width: 100vh;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  
+  }
+  
+  main #class-about {
+    background-image: url("https://i.pinimg.com/1200x/ae/c6/c6/aec6c653e54d6bd4a1b8c28656ab0413.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-top: 2px solid white;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  
+    color: white;
+  
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  main #class-about h1 {
+    font-size: 72px;
+    text-align: center;
+  }
+  
+  main #class-quote {
+    background-image: url("https://i.pinimg.com/1200x/8f/c7/3b/8fc73bc0b7d7bf9d5d80033a8d486796.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  
+    color: white;
+  
+    padding: 32px;
+  }
+  
+  main #class-quote h1 {
+    font-size: 72px;
+    text-align: center;
+  }
+  
+  main #class-quote p {
+    max-width: 1024px;
+    font-size: 28px;
+    text-align: center;
+  
+    word-spacing: 1.6px;
+    line-height: 40px;
+  }
+  
+  footer {
+    height: 25vh;
+    background-color: rgb(20, 20, 24);
+    color: white;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    gap: 16px;
+  
+    color: white;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    main #class-page {
+      flex-direction: column;
+    }
+  
+    main #class-page #class-page-left,
+    main #class-page #class-page-right {
+      width: 100%;
+      height: 50%;
+    }
+  
+    main #class-page #class-page-left #class-page-title h1 {
+      text-align: center;
+    }
+  
+    main #class-page #class-page-left #class-page-title h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    main #class-page #class-page-right img {
+      border-radius: 32px 32px 0 0;
+    }
+  
+    main #class-quote p {
+      font-size: 21px;
+      word-spacing: 25.6px;
+      line-height: 35.2px;
+    }
+  }
